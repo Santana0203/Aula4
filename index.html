@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu vou buscar</title>
+</head>
+<body>
+    <center>
+        <h1>F800 GS</h1>
+
+        <p>Nome: <input type="text" name="nome" id="inome" placeholder="Digite seu nome"></p>
+        <p>Sobrenome: <input type="text" name="sobrenome" id="isobrenome" placeholder="Digite seu Sobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+        <br><br>
+        <h1>Formulario de validação</h1>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <form action="main.js" method="get">
+                <p><label for="inome">Nome: </label></p>
+                <p><input type="text" name="nome" id="inome" placeholder="Digite seu nome" minlength="3" maxlength="30" required="nome"></p>
+                  
+                <p>
+                    <label for="isobrenome"></label>
+                    <input type="text" name="sobrenome" id="isobrenome" placeholder="Digite seu sobrenome">
+                </p>  
+                <p>
+                    <label for="idata"> Data de Nascimento:</label>
+                    <input type="date" name="data" id="idata">
+                </p>
+                <p>
+                    <label for="iemail">Email:</label>
+                    <input type="email" name="email" id="iemail" placeholder="Digite o Email">
+                </p>
+                <p>
+                    <label for="iendereço">Endereço:</label>
+                    <input type="text" name="endereço" id="iendereço" placeholder="Endereço">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+
+            </form>
+        </fieldset>
+
+    </center>
+</body>
+</html>
